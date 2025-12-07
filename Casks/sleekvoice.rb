@@ -2,13 +2,13 @@ cask "sleekvoice" do
   version "2.3"
   sha256 "d015afe72c8f15eaf2627fbaf42dc51eb82ea4cad1965f018f7a1a0539b8776e"
 
-  url "https://github.com/bvsbharat/SleekVoice/releases/download/v#{version}/SleekVoice.dmg"
+  url "https://github.com/bvsbharat/sleekvoice-releases/releases/download/v#{version}/SleekVoice.dmg"
   name "SleekVoice"
   desc "Voice-to-text AI that turns speech into clear, polished writing"
-  homepage "https://github.com/bvsbharat/SleekVoice"
+  homepage "https://github.com/bvsbharat/sleekvoice-releases"
 
   livecheck do
-    url :url
+    url "https://github.com/bvsbharat/sleekvoice-releases/releases/latest"
     strategy :github_latest
   end
 
